@@ -56,7 +56,6 @@ python app.py
 ├─ funciones.py     # Lógica de tareas y persistencia (JSON)
 ├─ tareas.json      # (se genera al usar el programa)
 ├─ README.md
-├─ LICENSE
 ├─ .gitignore
 └─ screenshots/
    └─ demo.png      # (opcional) captura de la consola
@@ -64,22 +63,10 @@ python app.py
 
 ---
 
-## 🧭 Siguientes pasos (Roadmap)
-- [ ] Manejo de entradas no numéricas en completar/eliminar.
-- [ ] Filtros: ver solo pendientes / completadas.
-- [ ] Prioridad y fecha de vencimiento por tarea.
-- [ ] Tests básicos con `pytest`.
-- [ ] CLI con `argparse` (ej: `--add "Estudiar SQL"`).
-
----
-
 ## 🤝 Contribuir
 Sugerencias y PRs son bienvenidos. Si encontrás un bug, abrí un **issue**.
 
 ---
-
-## 📄 Licencia
-Distribuido bajo la licencia **MIT**. Ver `LICENSE` para más detalles.
 
 ---
 
