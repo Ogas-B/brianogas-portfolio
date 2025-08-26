@@ -56,7 +56,6 @@ python app.py
 ├─ funciones.py     # Lógica de tareas y persistencia (JSON)
 ├─ tareas.json      # (se genera al usar el programa)
 ├─ README.md
-├─ LICENSE
 ├─ .gitignore
 └─ screenshots/
    └─ demo.png      # (opcional) captura de la consola
