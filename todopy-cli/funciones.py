@@ -10,6 +10,8 @@ y persistencia simple en JSON.
 
 import json
 import os
+import time
+
 
 ARCHIVO = "tareas.json"
 
@@ -76,6 +78,9 @@ def añadir_tarea() -> None:
 
     tareas.append({"nombre": tarea, "completada": False})
     print(f"✔ Tarea añadida: “{tarea}”")
+    print("Volviendo al menú")
+    time.sleep(2) # Pausa de 2 segundos
+
 
 
 def ver_tareas() -> None:
@@ -116,6 +121,7 @@ def completar_tarea(indice: int) -> None:
             return
         tareas[indice]["completada"] = True
         print(f"✅ Completada: “{tareas[indice]['nombre']}”")
+        time.sleep(2) # Pausa de 2 segundos
 
 
 def eliminar_tarea(indice: int) -> None:
@@ -123,3 +129,4 @@ def eliminar_tarea(indice: int) -> None:
     if _indice_valido(indice):
         borrada = tareas.pop(indice)
         print(f"🗑 Eliminada: “{borrada.get('nombre', '(sin nombre)')}”")
+        time.sleep(2) # Pausa de 2 segundos

@@ -30,6 +30,7 @@ Notas
 
 import funciones as fn
 import os 
+import time
 
 # Cargar tareas guardadas (si existen)
 fn.cargar_tareas()
@@ -55,7 +56,7 @@ while True:
         print("\n📋 Tus tareas")
         fn.ver_tareas()
         print("— Fin de la lista —\n")
-        input("📝 Escribí ¨1¨ para volver al menu: ")
+        input("📝 Escribir ¨1¨ para volver al menú ")
 
     elif opcion == "3":
         # Marcar una tarea como completada (índice mostrado al usuario inicia en 1)
@@ -83,8 +84,11 @@ while True:
         # Salida ordenada del programa (se guarda por las dudas)
         print("\n👋 Guardando y saliendo... ¡Hasta luego!\n")
         fn.guardar_tareas()
+        time.sleep(2) # Pausa de 2 segundos
+
         break
 
     else:
         # Entrada inválida en el menú
         print("\n⚠️ Opción no válida. Elegí un número del 1 al 5.\n")
+        time.sleep(2) # Pausa de 2 segundos

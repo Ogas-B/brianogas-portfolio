@@ -1,6 +1,10 @@
 [
   {
-    "nombre": "Estudiar",
+    "nombre": "Pagar una factura",
+    "completada": true
+  },
+  {
+    "nombre": "Leer un libro",
     "completada": false
   }
 ]
